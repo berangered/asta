@@ -12,7 +12,7 @@ mod_stat6_classif_generalisation_ui <- function(id){
   
   tabItem(
     "subitem__5",
-    h2("Généralisation du modèle choisi au fichier test"),
+    h2("Généralisation du modèle final"),
     
     fluidRow(column(3,
                     
@@ -133,7 +133,7 @@ mod_stat6_classif_generalisation_server <- function(id,global){
       
       req(local$dt)
 
-      extract_fit_parsnip(local$fit_final)
+    local$fit_final
       
       # shinipsum::random_print(type = "model")
       
@@ -148,7 +148,12 @@ mod_stat6_classif_generalisation_server <- function(id,global){
     })
     
     output$text1 <- renderText({
-      shinipsum::random_text(nwords = 100)
+      # shinipsum::random_text(nwords = 100)
+      "Le modèle final est généralement celui qui a les meilleures performances en fonction de l'objectif qu'on lui a fixé. 
+      Ce modèle est ensuite ajusté sur la totalité de la base d'apprentissage, c'est à dire la base d'entraînement et la base de validation. 
+      La base de test n'a donc pas du tout servi pour ajuster le modèle, mais elle est utilisée ici pour faire des prédictions, 
+      à partir desquelles on peut observer la performance du modèle. 
+      Mais on ne reviendra pas en arrière : le modèle a déjà été choisi à la phase précédente !"
     })
     
     
@@ -196,7 +201,7 @@ mod_stat6_classif_generalisation_server <- function(id,global){
       # shinipsum::random_text(nwords = 2)
       
       local$pred %>%
-        roc_auc(truth = target, .data[[names(local$pred)[4]]]) %>%
+        roc_auc(truth = target, .data[[names(local$pred)[3]]]) %>%
         select(.estimate) %>% as.numeric() %>%
         format_box()
     })

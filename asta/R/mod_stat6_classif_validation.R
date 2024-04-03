@@ -64,20 +64,22 @@ mod_stat6_classif_validation_ui <- function(id){
                                                       style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                        plotOutput(ns("plot1"))),
                             
-                                     infoBox(
-                                       title = tags$p("Accuracy", style = "font-size : 80%;"),
+                                     infoBox( 
+                                       title = tags$p("Exactitude (accuracy)", style = "font-size : 80%;"),
                                        value = textOutput(ns("accuracy")),
                                        icon = icon("chart-line"),
                                        color="blue",
-                                       width = NULL
+                                       width = NULL,
+                                       subtitle =h6("C'est la part d'individus bien classés par le modèle.")
                                      ),
                                     
                                      infoBox(
-                                       title = tags$p("Sensitivity", style = "font-size : 80%;"),
+                                       title = tags$p("Sensibilité (ou sensitivity)", style = "font-size : 80%;"),
                                        value = textOutput(ns("sens")),
                                        icon = icon("chart-line"),
                                        color="blue",
-                                       width = NULL
+                                       width = NULL,
+                                       subtitle =h6("C'est le taux de vrais positifs parmi les positifs réels.")
                                      )
                                      
                                      
@@ -85,7 +87,7 @@ mod_stat6_classif_validation_ui <- function(id){
                      
                      column(6,
                             
-                            wellPanel(tags$p("Courbe ROC", 
+                            wellPanel(tags$p("Courbe ROC (Receiving Operating Chracteristic)", 
                                              style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        plotOutput(ns("plot2"))
                        
@@ -93,19 +95,21 @@ mod_stat6_classif_validation_ui <- function(id){
                        ),
                        
                        infoBox(
-                         title = tags$p("Aire sous la courbe", style = "font-size : 80%;"),
+                         title = tags$p("Aire sous la courbe ROC", style = "font-size : 80%;"),
                          value = textOutput(ns("AUC")),
                          icon = icon("chart-line"),
                          color="blue",
-                         width = NULL
+                         width = NULL,
+                         subtitle =h6("Cet indicateur permet de tenir compte du seuil choisi pour prédire.")
                        ),
                       
                        infoBox(
-                         title = tags$p("Specificity", style = "font-size : 80%;"),
+                         title = tags$p("Spécificité (ou specificity)", style = "font-size : 80%;"),
                          value = textOutput(ns("spec")),
                          icon = icon("chart-line"),
                          color="blue",
-                         width = NULL
+                         width = NULL,
+                         subtitle =h6("C'est le taux de vrais négatifs parmi les négatifs réels.")
                        )
                        
                        
@@ -185,7 +189,13 @@ mod_stat6_classif_validation_server <- function(id,global){
     })
     
     output$txt1 <- renderText({
-      shinipsum::random_text(nwords = 100)
+      # shinipsum::random_text(nwords = 100)
+      "Les performances des modèles de classification supervisée sont évalu\u00E9es 
+      avec des indicateurs calculés à partir de la table de confusion. Dans cette table, tous les individus de la base de validation 
+      sont classés en 4 catégories, en comparant leur prédiction à leur vraie valeur. 
+      Il y a les vrais positifs (VP) et les vrais négatifs (VN) qui constituent les biens classés. 
+      Il y a aussi les faux positifs (FP) et les faux négatifs (FN) qui sont mal classés. 
+      La courbe ROC permet de comparer les performances des modèles en fonction des seuils."
     })
     
     output$accuracy <- renderText({
@@ -232,7 +242,7 @@ mod_stat6_classif_validation_server <- function(id,global){
       # shinipsum::random_text(nwords = 2)
       
       local$pred %>%
-        roc_auc(truth = target, .data[[names(local$pred)[4]]]) %>%
+        roc_auc(truth = target, .data[[names(local$pred)[3]]]) %>%
         select(.estimate) %>% as.numeric() %>%
         format_box()
     })
