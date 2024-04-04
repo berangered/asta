@@ -16,7 +16,7 @@ mod_stat6_classif_preparation_ui <- function(id){
     
     tabName = "subitem__2",
     
-    h2("Préparation ou Preprocessing"),
+    h2("Préparation et transformation de la base (Preprocessing)"),
     
     fluidRow(
       

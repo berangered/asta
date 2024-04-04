@@ -27,7 +27,7 @@ mod_stat6_reg_modele_ui <- function(id){
                              style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                       selectInput(ns("select1"),
                                   "Choissisez un algorithme :",
-                                  choices = c("Régression Linéaire","Arbre","Forêt aléatoire","SVM")),
+                                  choices = c("Régression Linéaire","Arbre","Forêt aléatoire","SVM","KNN")),
                       actionButton(ns("go1"),"Ajustement du modèle")
                       
                     ),
@@ -157,6 +157,16 @@ mod_stat6_reg_modele_server <- function(id,global){
         en ajustant un hyperplan de manière à ce qu'il maximise la marge entre les données d'entraînement 
         et la fonction de régression. 
         La marge représente la distance entre les points les plus proches de l'hyperplan, appelés vecteurs de support."
+      }else if(input$select1 == "KNN"){
+        local$mod <- 
+          nearest_neighbor() %>%
+          set_mode("regression") %>%
+          set_engine("kknn")
+        local$descriptif <- "L'algorithme des k plus proches voisins consiste à prédire l'étiquette d'un individu 
+        en faisant la moyenne parmi les étiquettes des k plus proches voisins. 
+        La valeur de la prédiction va bien entendu dépendre du choix de K. 
+        Si K est trop grand, il aura tendance à toujours prédire le groupe majoritaire. 
+        Si K est trop petit, il y a un risque de sur-apprentissage."
       }
       
       

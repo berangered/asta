@@ -60,31 +60,34 @@ mod_stat6_reg_validation_ui <- function(id){
                                        style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                 
                                 infoBox(
-                                  title = tags$p("RSS", style = "font-size : 80%;"),
+                                  title = tags$p("RSS (erreur quadratique)", style = "font-size : 80%;"),
                                   value = textOutput(ns("rss")),
                                   icon = icon("chart-line"),
                                   color="blue",
-                                  width = NULL
+                                  width = NULL,
+                                  subtitle =h6("Ecart entre la vraie valeur et la valeur prédite au carré")
                                 ),
                                 
                                 infoBox(
-                                  title = tags$p("MSE", style = "font-size : 80%;"),
+                                  title = tags$p("MSE (erreur quadratique moyenne)", style = "font-size : 80%;"),
                                   value = textOutput(ns("mse")),
                                   icon = icon("chart-line"),
                                   color="blue",
-                                  width = NULL
+                                  width = NULL,
+                                  subtitle =h6("Ecart quadratique rapporté au nombre d'individus")
                                 ),
                                 
                                 infoBox(
-                                  title = tags$p("RMSE", style = "font-size : 80%;"),
+                                  title = tags$p("RMSE (racine de l'erreur quadratique moyenne)", style = "font-size : 80%;"),
                                   value = textOutput(ns("rmse")),
                                   icon = icon("chart-line"),
                                   color="blue",
-                                  width = NULL
+                                  width = NULL,
+                                  subtitle =h6("Racine carré du MSE")
                                 ), 
                                 
                                 infoBox(
-                                  title = tags$p("Coefficient de détermination", style = "font-size : 80%;"),
+                                  title = tags$p("R² (COEFFICIENT DE DETERMINATION)", style = "font-size : 80%;"),
                                   value = textOutput(ns("rsq")),
                                   icon = icon("chart-line"),
                                   color="blue",

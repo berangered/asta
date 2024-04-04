@@ -66,6 +66,7 @@ var_strata <- "target" #variable de stratification : souvent la variable target
 # data_split <- rsample::initial_split(data,
                                      # strata = .data[[var_strata]],
                                      # prop = part_training)
+set.seed(1234)
 data_split <- initial_validation_split(data,strata = .data[[var_strata]],prop = c(part_training,part_validation))
 # data_split <- initial_validation_split(data,strata = all_of(var_strata))
 
@@ -470,6 +471,7 @@ Le reste de la base se séparera équitablement entre la base servant à la vali
 part_training <- 0.8
 part_validation <- (1-part_training)/2
 
+set.seed(1234)
 data_split <- initial_validation_split(data,prop = c(part_training,part_validation)) 
 
 train_data <- training(data_split) #le fichier d'entraînement
@@ -598,9 +600,17 @@ mod_svm <- svm_linear() %>%
   set_mode("regression") %>%
   set_engine("LiblineaR")
 
+#Modèle KNN
+mod_knn <- 
+  nearest_neighbor(
+    neighbors = 3
+  ) %>% 
+  set_engine("kknn") %>% 
+  set_mode("regression")
 
-mod <- mod_tree
-rm(mod_lr,mod_rf,mod_svm)
+
+mod <- mod_knn
+rm(mod_lr,mod_rf,mod_svm,mod_knn)
 
 mod_chr <- attributes(mod)$class[1]
 ```
@@ -692,6 +702,7 @@ rm(rss,mse,rmse,rmsle,rse,rsq)
 ```{r}
 # set.seed(345)
 nb_folds <- 5
+set.seed(1234)
 folds <- vfold_cv(train_valid_data,
                   v = nb_folds)#paramétrage de la validation croisée
 # 

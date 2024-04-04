@@ -42,25 +42,28 @@ mod_stat6_classif_generalisation_ui <- function(id){
                                               style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                        verbatimTextOutput(ns("print1"))),
                              infoBox(
-                               title = tags$p("Accuracy", style = "font-size : 80%;"),
+                               title = tags$p("Exactitude (accuracy)", style = "font-size : 80%;"),
                                value = textOutput(ns("accuracy")),
                                icon = icon("chart-line"),
                                color="blue",
-                               width = NULL
+                               width = NULL,
+                               subtitle =h6("C'est la part d'individus bien classés par le modèle.")
                              ),
                              infoBox(
-                               title = tags$p("Specificity", style = "font-size : 80%;"),
+                               title = tags$p("Spécificité (ou specificity)", style = "font-size : 80%;"),
                                value = textOutput(ns("spec")),
                                icon = icon("chart-line"),
                                color="blue",
-                               width = NULL
+                               width = NULL,
+                               subtitle =h6("C'est le taux de vrais négatifs parmi les négatifs réels.")
                              ),
                              infoBox(
-                               title = tags$p("Sensibility", style = "font-size : 80%;"),
+                               title = tags$p("Sensibilité (ou sensitivity)", style = "font-size : 80%;"),
                                value = textOutput(ns("sens")),
                                icon = icon("chart-line"),
                                color="blue",
-                               width = NULL
+                               width = NULL,
+                               subtitle =h6("C'est le taux de vrais positifs parmi les positifs réels.")
                              )
                              
                              
@@ -68,7 +71,7 @@ mod_stat6_classif_generalisation_ui <- function(id){
                       
                       column(6,
                              
-                             wellPanel(tags$p("Prévisions", 
+                             wellPanel(tags$p("Prévisions sur la base de test", 
                                               style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                        DTOutput(ns("dt1"))
                                        
@@ -76,11 +79,12 @@ mod_stat6_classif_generalisation_ui <- function(id){
                              ),
                              
                              infoBox(
-                               title = tags$p("Aire sous la courbe", style = "font-size : 80%;"),
+                               title = tags$p("Aire sous la courbe ROC", style = "font-size : 80%;"),
                                value = textOutput(ns("auc")),
                                icon = icon("chart-line"),
                                color="blue",
-                               width = NULL
+                               width = NULL,
+                               subtitle =h6("Cet indicateur permet de tenir compte du seuil choisi pour prédire.")
                              )
                              
                              

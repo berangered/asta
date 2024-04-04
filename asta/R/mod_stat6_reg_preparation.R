@@ -15,7 +15,7 @@ mod_stat6_reg_preparation_ui <- function(id){
     
     
     tabName = "subitem__7",
-    h2("Préparation de la base"),
+    h2("Préparation et transformation de la base (Preprocessing)"),
     
     fluidRow(
       
