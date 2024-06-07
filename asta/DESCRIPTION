@@ -24,6 +24,7 @@ Imports:
     LiblineaR,
     parsnip,
     plotly,
+    purrr,
     questionr,
     rAmCharts,
     recipes,
@@ -45,7 +46,6 @@ Suggests:
     kableExtra,
     knitr,
     lubridate,
-    purrr,
     ranger,
     rmarkdown,
     tidymodels
