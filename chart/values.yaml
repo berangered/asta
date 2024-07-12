@@ -1,9 +1,9 @@
-shinyproxy:  
+shinyproxy:
   apps:
     - id: "asta"
       display-name: "ASTA"
       description: ""
-      container-image: "berangered/asta:machine_learning"
+      container-image: "berangered/asta:v1.2"
       container-cmd: []
       access-groups: []
       container-memory-limit: 4000Mi
