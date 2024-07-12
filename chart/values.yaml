@@ -1,0 +1,18 @@
+shinyproxy:  
+  apps:
+    - id: "asta"
+      display-name: "ASTA"
+      description: ""
+      container-image: "berangered/asta:machine_learning"
+      container-cmd: []
+      access-groups: []
+      container-memory-limit: 4000Mi
+      container-cpu-limit: 1000m
+      container-memory-request: 2000Mi
+      container-cpu-request: 100m
+      max-lifetime: 120
+
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hostname: asta.lab.sspcloud.fr
