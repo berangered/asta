@@ -1,5 +1,5 @@
 # Base image
-FROM rocker/shiny:4.2.0
+FROM rocker/shiny:4.4.1
 
 # Install required linux librairies
 RUN apt-get update -y && \
