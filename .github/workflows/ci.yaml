@@ -19,9 +19,8 @@ jobs:
         with:
           images: berangered/asta
           tags: |
-            type=ref,event=branch
             type=semver,pattern={{raw}}
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
+            type=raw,value=latest,enable={{is_default_branch}}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
