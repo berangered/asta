@@ -23,7 +23,7 @@ jobs:
         with:
           images: berangered/asta
           tags: |
-            type=semver,pattern={{raw}}
+            type=ref,event=tag
             type=raw,value=latest,enable={{is_default_branch}}
       - name: Login to DockerHub
         if: github.event_name != 'pull_request'
