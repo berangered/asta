@@ -20,7 +20,7 @@ jobs:
           images: berangered/asta
           tags: |
             type=ref,event=branch
-            type=semver,pattern={{version}}
+            type=semver,pattern={{raw}}
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -38,9 +38,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: |
-            ${{ steps.docker_meta.outputs.tags }}
-            ${{ github.ref == 'refs/heads/main' && 'berangered/asta:latest' || '' }}
           labels: ${{ steps.docker_meta.outputs.labels }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
