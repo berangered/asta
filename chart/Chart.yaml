@@ -3,5 +3,5 @@ name: asta
 version: 0.0.1
 dependencies:
   - name: shinyproxy
-    version: 2.1.3
+    version: 2.2.0
     repository: https://inseefrlab.github.io/helm-charts
