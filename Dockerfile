@@ -5,7 +5,8 @@ FROM rocker/shiny:4.2.0
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends libpq-dev \ 
                                                libssl-dev \
-                                               libxml2-dev
+                                               libxml2-dev \
+                                               libglpk40
 
 # Install R package and its dependencies
 RUN install2.r devtools

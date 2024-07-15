@@ -19,11 +19,8 @@ jobs:
         with:
           images: berangered/asta
           tags: |
-            # branch event
             type=ref,event=branch
-            # propagate valid semver tags
-            type=semver,pattern={{raw}}
-            # set latest tag for main branch
+            type=semver,pattern={{version}}
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1

@@ -3,14 +3,11 @@ shinyproxy:
     - id: "asta"
       display-name: "ASTA"
       description: ""
-      container-image: "berangered/asta:v1.2"
-      container-cmd: []
-      access-groups: []
+      container-image: "berangered/asta:latest"
       container-memory-limit: 4000Mi
       container-cpu-limit: 1000m
       container-memory-request: 2000Mi
       container-cpu-request: 100m
-      max-lifetime: 120
 
   ingress:
     enabled: true
