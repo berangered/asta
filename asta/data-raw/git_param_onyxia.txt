@@ -1,12 +1,12 @@
 
 #Lignes de code à lancer depuis le terminal au début du démarrage d'une nouvelle session onyxia
-#git config --global user.name "Jean Sebban"
-#git config --global user.email jean.sebban@insee.fr
-#git config --global credential.helper store
-#git config --global pull.rebase false #pour gérer les conflits entre fichiers sans faire de rebase
+git config --global user.name "Jean Sebban"
+git config --global user.email jean.sebban@insee.fr
+git config --global credential.helper store
+git config --global pull.rebase false #pour gérer les conflits entre fichiers sans faire de rebase
 
 #pour vérifier la config définie plus haut.
-#git config --global --list
+git config --global --list
 
 #pour utiliser winmerge, qui permet de gérer les conflits de fichiers
 #git config --global merge.tool winmerge

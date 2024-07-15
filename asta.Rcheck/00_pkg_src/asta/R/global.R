@@ -56,4 +56,4 @@ globalVariables( c("ECH",
                    "kmeans",
                    "palette",
                    "par",
-                   "points","departements","ordre","Densite_pop","Tx_vols_vehicules","nb_habitants"))
+                   "points","departements","ordre","Densite_pop","Tx_vols_vehicules","nb_habitants","quality","IDENT","target",".pred_class",".pred",".estimate","maxO3"))

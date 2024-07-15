@@ -1,6 +1,6 @@
 
-R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
-Copyright (C) 2023 The R Foundation for Statistical Computing
+R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+Copyright (C) 2024 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -51,7 +51,8 @@ Warning: replacing previous import ‘dplyr::filter’ by ‘stats::filter’ wh
 > ### ** Examples
 > 
 > boxplot_tirage_m2(grandile, "PATRIMOINE")
-Warning: Removed 3710 rows containing non-finite values (`stat_boxplot()`).
+Warning: Removed 3710 rows containing non-finite outside the scale range
+(`stat_boxplot()`).
 > 
 > 
 > 
@@ -394,83 +395,11 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -484,54 +413,6 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
@@ -543,54 +424,6 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -604,83 +437,11 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -694,83 +455,11 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -784,54 +473,6 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
@@ -843,114 +484,6 @@ Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -963,90 +496,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '1 – Agriculteurs exploitants' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1059,90 +508,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '2 – Artisans, commerçants, chefs d'entreprise' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1155,90 +520,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '3 – Cadres, professions intellectuelles supérieures' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1251,90 +532,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '4 – Professions intermédiaires' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1347,90 +544,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '5 – Employés' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1443,90 +556,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '6 – Ouvriers' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -1539,90 +568,6 @@ Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <80>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '7 – Inactifs ayant déjà travaillé' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <80>
-Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  :
-  conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <93>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
   conversion failure on '8 – Autres sans activité professionnelle' in 'mbcsToSbcs': dot substituted for <e2>
 Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
@@ -5946,7 +4891,7 @@ Total                                                    5418      100.00
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  55.018 5.322 58.311 0 0 
+Time elapsed:  20.82 9.089 18.044 0 0 
 > grDevices::dev.off()
 null device 
           1 

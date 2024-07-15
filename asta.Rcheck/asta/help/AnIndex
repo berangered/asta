@@ -27,6 +27,7 @@ model_lineaireS_plot	model_lineaireS_plot
 model_lineaireS_tab	model_lineaireS_tab
 model_logistiqueSS_tab	model_logistiqueSS_tab
 model_logistique_tab	model_logistique_tab
+ozone	ozone
 plot_apur_m2	plot_apur_m2
 pond_m2	pond_m2
 rambarplot_quali	rambarplot_quali
@@ -41,4 +42,5 @@ tirage_sas_m2	tirage_sas_m2
 tirage_strat_m2	tirage_strat_m2
 titanic	titanic
 tri_plat	tri_plat
+vins	vins
 visiteurs	visiteurs

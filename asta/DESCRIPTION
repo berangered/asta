@@ -20,26 +20,37 @@ Imports:
     ggplot2,
     ggthemes,
     golem (>= 0.3.1),
+    kknn,
+    LiblineaR,
+    parsnip,
     plotly,
+    purrr,
     questionr,
     rAmCharts,
+    recipes,
+    rsample,
     sampling,
     shinipsum,
     shiny (>= 1.7.1),
     shinydashboard,
     shinythemes,
+    skimr,
     stats,
     stringr,
-    tidyr
+    tidyr,
+    tune,
+    workflows,
+    yardstick
 Suggests: 
     datasets,
     kableExtra,
     knitr,
     lubridate,
-    purrr,
-    rmarkdown
+    ranger,
+    rmarkdown,
+    tidymodels
 VignetteBuilder: 
     knitr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

@@ -35,7 +35,7 @@ mod_sommaire_ui <- function(id){
     h3(span("Stat 3 : Analyse exploratoire de donn\u00e9es")),
     h3("Stat 4 : Mod\u00e9lisation"),
     h3("Stat 5 : S\u00e9ries temporelles"),
-    h3(span("Stat 6 : Secret statistique et Big Data")),
+    h3(span("Stat 6 : Machine learning")),
     tags$br(),tags$br(),tags$br()
     
    

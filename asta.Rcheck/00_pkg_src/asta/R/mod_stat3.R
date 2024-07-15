@@ -7,6 +7,7 @@
 #' @noRd 
 #'
 #' @importFrom shiny NS tagList 
+#' @importFrom DT formatRound
 mod_stat3_ui <- function(id){
   ns <- NS(id)
 
@@ -115,7 +116,7 @@ mod_stat3_ui <- function(id){
                        tags$p("nb_habitants : nombre d'habitants", style = "font-size : 110% "),
                        tags$p("Densite_pop : densit\u00e9 de population ", style = "font-size : 110% "),
                        tags$p("Part_6599 : part des personnes entre 65 et 99 ans (pourcentage) ", style = "font-size : 110% "),
-                       tags$p("part_bacp5 :  ", style = "font-size : 110% "),
+                       tags$p("part_bacp5 :  part de diplôm\u00e9s de niveau bac +5 ou sup\u00e9rieur", style = "font-size : 110% "),
                        tags$p("Tx_activite : taux d'activit\u00e9 (pourcentage) ", style = "font-size : 110% "),
                        tags$p("Tx_chomage : taux de chomage (pourcentage) ", style = "font-size : 110% "),
                        tags$p("Tx_emploi : taux d'emploi", style = "font-size : 110% "),
@@ -125,8 +126,8 @@ mod_stat3_ui <- function(id){
                        tags$p("part_resid_secondaires : part des résidences secondaires  ", style = "font-size : 110% "),
                        tags$p("part_maisons : part des maisons  ", style = "font-size : 110% "),
                        tags$p("part_propriétaires : part des propriétaires  ", style = "font-size : 110% "),
-                       tags$p("Tx_vols_vehicules : taux  ", style = "font-size : 110% "),
-                       tags$p("GR_REG :   ", style = "font-size : 110% ")
+                       tags$p("Tx_vols_vehicules : nombre de v\u00e9hicules vol\u00e9s pour 1000 habitants  ", style = "font-size : 110% "),
+                       tags$p("GR_REG :   groupes de r\u00e9gions en 6 modalit\u00e9s (IDF, NO, NE, SO, SE, DOM)", style = "font-size : 110% ")
                        
                      )
                      ),
@@ -191,7 +192,9 @@ mod_stat3_server <- function(id, global){
     
     output$dt1 <- renderDT({
       
-      global$data %>% DT::datatable(class = "display")
+      global$data %>% DT::datatable(class = "display compact", options = list(
+        scrollX = TRUE)) %>% 
+         formatRound("Tx_emploi", 1)
       
     })
     

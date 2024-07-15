@@ -14,27 +14,37 @@ mod_stat6_ui <- function(id){
            
            dashboardPage(
              
-             dashboardHeader(title = "Secret statistique et Big Data"),
+             dashboardHeader(title = "Machine Learning"),
              dashboardSidebar(
                fluidRow(collapsed = FALSE,
                         
                         
-                        sidebarMenu(id = "secret_bigdata",
+                        sidebarMenu(id = "classif_regression",
                                     
                                     
                                     
-                                    menuItem(tabName = "secret",
+                                    menuItem(tabName = "classif",
                                       
-                                      "Secret Statistique",
+                                      "Classification supervis\u00e9e",
+                                      menuSubItem("Donn\u00e9es", tabName = "subitem__1"),
+                                      menuSubItem("Pr\u00e9paration", tabName = "subitem__2"),
+                                      menuSubItem("Modèle", tabName = "subitem__3"),
+                                      menuSubItem("Validation", tabName = "subitem__4"),
+                                      menuSubItem("G\u00e9n\u00e9ralisation", tabName = "subitem__5"),
                                       icon = icon("th"),
                                       selected = FALSE
                                       
                                       
                                     ), 
                                     
-                                    menuItem(tabName = "big_data",
+                                    menuItem(tabName = "regression",
                                              
-                                             "Big Data",
+                                             "R\u00e9gression supervis\u00e9e",
+                                             menuSubItem("Donn\u00e9es", tabName = "subitem__6"),
+                                             menuSubItem("Pr\u00e9paration", tabName = "subitem__7"),
+                                             menuSubItem("Modèle", tabName = "subitem__8"),
+                                             menuSubItem("Validation", tabName = "subitem__9"),
+                                             menuSubItem("G\u00e9n\u00e9ralisation", tabName = "subitem__10"),
                                              icon = icon("th"),
                                              selected = FALSE
                                              
@@ -69,48 +79,32 @@ mod_stat6_ui <- function(id){
                )
                
              ),
-             dashboardBody(tabItems(
+             dashboardBody(
+               
+               tabItems(
                
                
-               tabItem(
-                 tabName = "secret",
-                 wellPanel(span("Le cadre légal et règlementaire  :", style="color:blue"),br(), br(), 
-                           "- La loi n°51-711 du 7 juin 1951 modifiée sur l'obligation, la coordination et le secret
-                           en matière de statistiques définit ce qu'est le secret statistique, ses limites et ses conditions",br(),br(),
-                 "- Principe 5 du Code de bonnes pratiques de la Statistique Européenne : Le respect de la vie privée ou du secret des affaires
-                 des fournisseurs de données, la confidentialité des informations qu'ils communiquent et l'utilisation de 
-                 celles-ci à des fns strictement statistiques doivent être absolument ganratis"),
-                 wellPanel(span("Le repérage  :", style="color:blue"), br(),br(),
-                           "- des règles pour les entreprises (3 unités et 85%)",br(),
-                           "- des règles pour les ménages"),
-                 wellPanel(span("Les méthodes  :", style="color:blue"), br(),br(),
-                           "- restructuration des données (fusion de lignes/colonnes ou redocification de modalités)", br(),
-                           "- suppressions primaires et secondaires")
-                 
-               ),
-               tabItem(
-                 tabName = "big_data",
-                 wellPanel(span("Big Data : un enjeu de taille", style="color:blue"),br(), br(), 
-                           "- Des nouvelles données parfois volumineuses ou à haute fréquence, avec des formats variés",br(),br(),
-                           "- Des limites et des défis pour l'exploitation",br(),br(),
-                           "- Des initiatives à l'Insee et dans le SSP : données de caisse, partenariat Orange Lab, création d'un SSP Lab"),
-                 wellPanel(span("Big Data : une définition en 5 V", style="color:blue"),br(), br(), 
-                           "- Volume",br(),
-                           "- Vitesse",br(),
-                           "- Variété",br(),
-                           "- Véracité",br(),
-                           "- Valeur")
-                 
-               )
-               
-             ))
+                 mod_stat6_classif_donnees_ui(ns("stat6_classif_donnees")),
+                 mod_stat6_classif_preparation_ui(ns("stat6_classif_preparation")),
+                 mod_stat6_classif_modele_ui(ns("stat6_classif_modele")),
+                 mod_stat6_classif_validation_ui(ns("stat6_classif_validation")),
+                 mod_stat6_classif_generalisation_ui(ns("stat6_classif_generalisation")),
+                 mod_stat6_reg_donnees_ui(ns("stat6_reg_donnees")),
+                 mod_stat6_reg_preparation_ui(ns("stat6_reg_preparation")),
+                 mod_stat6_reg_modele_ui(ns("stat6_reg_modele")),
+                 mod_stat6_reg_validation_ui(ns("stat6_reg_validation")),
+                 mod_stat6_reg_generalisation_ui(ns("stat6_reg_generalisation"))
+             
+             
+             
+             )
              
              
              
            )
            
            
-           )
+           ))
   
   
 }
@@ -118,9 +112,27 @@ mod_stat6_ui <- function(id){
 #' stat6 Server Functions
 #'
 #' @noRd 
-mod_stat6_server <- function(id){
+mod_stat6_server <- function(id,global){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
+    
+    
+    global <- reactiveValues(dt = NULL,
+                             rec = NULL,
+                             mod = NULL,
+                             wflow = NULL,
+                             fit = NULL)
+    
+    mod_stat6_classif_donnees_server("stat6_classif_donnees",global=global)
+    mod_stat6_classif_preparation_server("stat6_classif_preparation",global = global)
+    mod_stat6_classif_modele_server("stat6_classif_modele",global=global)
+    mod_stat6_classif_validation_server("stat6_classif_validation",global=global)
+    mod_stat6_classif_generalisation_server("stat6_classif_generalisation",global=global)
+    mod_stat6_reg_donnees_server("stat6_reg_donnees",global=global)
+    mod_stat6_reg_preparation_server("stat6_reg_preparation",global=global)
+    mod_stat6_reg_modele_server("stat6_reg_modele",global=global)
+    mod_stat6_reg_validation_server("stat6_reg_validation",global=global)
+    mod_stat6_reg_generalisation_server("stat6_reg_generalisation",global=global)
  
   })
 }

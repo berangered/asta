@@ -74,6 +74,18 @@ golem::add_module(name = "stat5_desaisonnalisation_mm")
 
 #Stat6
 golem::add_module( name = "stat6" )
+#Classifs supervisées
+golem::add_module(name = "stat6_classif_donnees")
+golem::add_module(name = "stat6_classif_preparation")
+golem::add_module(name = "stat6_classif_modele")
+golem::add_module(name = "stat6_classif_validation")
+golem::add_module(name = "stat6_classif_generalisation")
+#Regressions
+golem::add_module(name = "stat6_reg_donnees")
+golem::add_module(name = "stat6_reg_preparation")
+golem::add_module(name = "stat6_reg_modele")
+golem::add_module(name = "stat6_reg_validation")
+golem::add_module(name = "stat6_reg_generalisation")
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
@@ -134,6 +146,8 @@ usethis::use_data_raw(name="visiteurs",open = FALSE)
 usethis::use_data_raw(name="chomage_bit",open = FALSE)
 usethis::use_data_raw(name="accidents",open = FALSE)
 usethis::use_data_raw(name="departements",open = FALSE)
+usethis::use_data_raw(name="vins",open = FALSE)
+usethis::use_data_raw(name="ozone",open = FALSE)
 
 ## Tests ----
 ## Add one line by test you want to create
@@ -147,6 +161,7 @@ usethis::use_vignette("module2")
 usethis::use_vignette("module1")
 usethis::use_vignette("module4")
 usethis::use_vignette("module3")
+usethis::use_vignette("module6")
 devtools::build_vignettes("module1")
 
 ## Code Coverage----
