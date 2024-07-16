@@ -39,6 +39,7 @@ Choisir la base de données et le pourcentage de test :
 #   select(-starts_with("LIB")) %>%
 #   select(-IDENT) %>%
 #   mutate(target = as.factor(target))
+#super
 
 #vins
 data <- vins %>% rename(target = quality)
