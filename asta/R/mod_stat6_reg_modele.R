@@ -27,8 +27,21 @@ mod_stat6_reg_modele_ui <- function(id){
                              style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                       selectInput(ns("select1"),
                                   "Choissisez un algorithme :",
-                                  choices = c("Régression Linéaire","Arbre","Forêt aléatoire","SVM","KNN")),
+                                  choices = c("Régression Linéaire","Arbre","Forêt aléatoire","SVM")),
                       actionButton(ns("go1"),"Ajustement du modèle")
+                      
+                    ),
+                    
+                    wellPanel(
+                      
+                      tags$p("Hyper-paramètres",
+                             style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
+                      selectInput(ns("select2"),
+                                  "Choisissez un paramètre :",
+                                  choices = NULL),
+                      sliderInput(ns("slide1"),label = textOutput(ns("text2")),min = 1,max = 30,step = 1,value = 5),
+                      actionButton(ns("go2"),"Mettre à jour le modèle")
+                      
                       
                     ),
                     
@@ -125,6 +138,7 @@ mod_stat6_reg_modele_server <- function(id,global){
         ) %>%
           set_engine("rpart") %>%
           set_mode("regression")
+        
         local$descriptif <- "Les arbres de regression sont des outils 
         d'exploration des données et d'aide 
         à la décision qui permettent d'expliquer 
@@ -132,6 +146,10 @@ mod_stat6_reg_modele_server <- function(id,global){
         quantitatives et/ou qualitatives. Dans cet exemple, les arbres sont construits avec 
         l'algorithme CART qui permet d'obtenir des classes d'individus le 
         plus homogène possible, selon la variable d'intérêt (target)."
+        
+        local$hyper <- c("Complexité","Profondeur max","Nombre d'individus min")
+        
+        
       }else if(input$select1 == "Forêt aléatoire"){
         local$mod <- 
           rand_forest(
@@ -148,6 +166,9 @@ mod_stat6_reg_modele_server <- function(id,global){
         construits sur des échantillons bootstrap. Pour la construction des arbres, 
         à chaque noeud, seul un sous-ensemble de variables (3 par défaut) est sélectionné aléatoirement 
         pour choisir la coupure. "
+        
+        local$hyper <- c("Nombre d'arbres","Nombre de variables","Nombre d'individus min")
+        
       }else if(input$select1 == "SVM"){
         local$mod <- 
           svm_linear() %>%
@@ -157,16 +178,6 @@ mod_stat6_reg_modele_server <- function(id,global){
         en ajustant un hyperplan de manière à ce qu'il maximise la marge entre les données d'entraînement 
         et la fonction de régression. 
         La marge représente la distance entre les points les plus proches de l'hyperplan, appelés vecteurs de support."
-      }else if(input$select1 == "KNN"){
-        local$mod <- 
-          nearest_neighbor() %>%
-          set_mode("regression") %>%
-          set_engine("kknn")
-        local$descriptif <- "L'algorithme des k plus proches voisins consiste à prédire l'étiquette d'un individu 
-        en faisant la moyenne parmi les étiquettes des k plus proches voisins. 
-        La valeur de la prédiction va bien entendu dépendre du choix de K. 
-        Si K est trop grand, il aura tendance à toujours prédire le groupe majoritaire. 
-        Si K est trop petit, il y a un risque de sur-apprentissage."
       }
       
       
@@ -183,8 +194,150 @@ mod_stat6_reg_modele_server <- function(id,global){
       local$pred <- augment(local$fit,local$dt)
       global$pred <- local$pred
       
+      
+      updateSelectInput(session = session,inputId = "select2",choices = local$hyper)
+      
     }
     )
+    
+    observeEvent(input$select2,{
+      
+      if(input$select2 == "Profondeur max"){
+        
+        local$min <- 1
+        local$max <- 30
+        local$step <- 1
+        local$value <- 5
+        
+      }else if(input$select2 == "Nombre d'individus min"){
+        
+        local$min <- 2
+        local$max <- nrow(local$dt)
+        local$step <- 1
+        local$value <- 100
+        
+      }else if(input$select2 == "Complexité"){
+        
+        local$min <- 0
+        local$max <- 0.1
+        local$step <- 0.001
+        local$value <- 0.01
+        
+      # }else if(input$select2 == "Nombre de voisins"){
+      # 
+      #   local$min <- 1
+      #   local$max <- 100
+      #   local$step <- 1
+      #   local$value <- 5
+        
+      }else if(input$select2 == "Nombre d'arbres"){
+        
+        local$min <- 0
+        local$max <- 5000
+        local$step <- 50
+        local$value <- 500
+        
+      }else if(input$select2 == "Nombre de variables"){
+        
+        local$min <- 1
+        local$max <- length(local$dt)
+        local$step <- 1
+        local$value <- 3
+        
+      }
+      
+      updateSliderInput(session = session,inputId = "slide1",min = local$min)
+      updateSliderInput(session = session,inputId = "slide1",max = local$max)
+      updateSliderInput(session = session,inputId = "slide1",step = local$step)
+      updateSliderInput(session = session,inputId = "slide1",value = local$value)
+      
+      
+    })
+    
+    
+    observeEvent(input$go2,{
+      
+      if(input$select1 == "Régression Logistique"){
+        local$mod <- logistic_reg() %>% 
+          set_engine("glm")
+        
+      }else if(input$select2 == "Profondeur max"){
+        local$mod <- decision_tree(
+          # cost_complexity = 0.001,
+          tree_depth = input$slide1,
+          # min_n = input$slide1
+        ) %>%
+          set_engine("rpart") %>%
+          set_mode("regression")
+        
+      }else if(input$select1 == "Arbre" & input$select2 == "Nombre d'individus min"){
+        local$mod <- decision_tree(
+          # cost_complexity = 0.001,
+          # tree_depth = input$slide1,
+          min_n = input$slide1
+        ) %>%
+          set_engine("rpart") %>%
+          set_mode("regression")
+        
+      }else if(input$select2 == "Complexité"){
+        local$mod <- decision_tree(
+          cost_complexity = input$slide1,
+          # tree_depth = input$slide1,
+          # min_n = input$slide1
+        ) %>%
+          set_engine("rpart") %>%
+          set_mode("regression")
+        
+      # } else if(input$select2 == "Nombre de voisins"){
+      #   local$mod <- nearest_neighbor(
+      #     neighbors = input$slide1
+      #   ) %>% 
+      #     set_engine("kknn") %>% 
+      #     set_mode("classification")
+        
+      }else if(input$select2 == "Nombre d'arbres"){
+        local$mod <- 
+          rand_forest(
+            trees = input$slide1,
+            #           mtry = 3,
+            #           min_n = NULL
+          ) %>% 
+          set_engine("ranger") %>% 
+          set_mode("regression")
+        
+      }else if(input$select2 == "Nombre de variables"){
+        local$mod <- 
+          rand_forest(
+            # trees = input$slide1,
+            mtry = input$slide1,
+            #           min_n = NULL
+          ) %>% 
+          set_engine("ranger") %>% 
+          set_mode("regression")
+        
+      }else if(input$select1 == "Forêt aléatoire" & input$select2 == "Nombre d'individus min"){
+        local$mod <- 
+          rand_forest(
+            # trees = input$slide1,
+            # mtry = input$slide1,
+            min_n = input$slide1
+          ) %>% 
+          set_engine("ranger") %>% 
+          set_mode("regression")
+        
+      }
+      local$wflow <- workflow() %>%
+        add_model(local$mod) %>%
+        add_recipe(local$rec)
+      global$wflow <- local$wflow
+      local$fit <- local$wflow %>% fit(local$dt)
+      global$fit <- local$fit
+      local$pred <- augment(local$fit,local$dt)
+      global$pred <- local$pred
+      
+      
+      
+    })
     
     
     
