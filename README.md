@@ -8,7 +8,7 @@ A compléter
 
 Pour déployer l'application sur le SSP Cloud : 
 
-- Lancer un service RStudio **avec les droits `admin` sur le namespace (onglet `Kubernetes` dans les configurations du service)**
+- Lancer un service RStudio **avec les droits `admin` sur l'onglet Role**
 
 - Cloner le dépôt GitHub du projet
 
