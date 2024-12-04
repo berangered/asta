@@ -76,6 +76,7 @@ mod_stat1_inf_tests_ui <- function(id){
                    
                    infoBox(
                      title = "P-VALUE",
+                     subtitle = "Probabilit\u00e9e critique",
                      value = textOutput(ns("pvalue")),
                      # subtitle = "Borne inf\u00e9rieure",
                      icon = icon("chart-line"),
