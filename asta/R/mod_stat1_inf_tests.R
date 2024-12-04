@@ -43,7 +43,7 @@ mod_stat1_inf_tests_ui <- function(id){
                                  choices = c("H1 diff\u00e9rent de x"="two.sided","H1 >x"="greater","H1 < x "="less")),
                      
                      sliderInput(ns("slide2"),
-                                 "Choisissez un niveau de confiance (en %) :",
+                                 "Choisissez un seuil de confiance (en %) :",
                                  min = 1,
                                  max = 10,
                                  value = 5,
