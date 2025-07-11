@@ -3,7 +3,7 @@ shinyproxy:
     - id: "asta"
       display-name: "ASTA"
       description: ""
-      container-image: "berangered/asta:v1.3"
+      container-image: "berangered/asta:v1.6"
       container-memory-limit: 4000Mi
       container-cpu-limit: 1000m
       container-memory-request: 2000Mi
