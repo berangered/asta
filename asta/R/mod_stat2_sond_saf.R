@@ -21,7 +21,7 @@ mod_stat2_sond_saf_ui <- function(id){
                          "Choisissez la taille de l'\u00e9chantillon",
                          min=100,
                          max=2500,
-                         value=150),
+                         value=100),
              selectInput(ns("NomVar1"),
                          "Choisissez une variable de stratification :", 
                          choices=c("Diplome"="DIPL","Pauvre"="PAUVRE", "PCS"="PCS")),
@@ -31,7 +31,7 @@ mod_stat2_sond_saf_ui <- function(id){
              actionButton(ns("go"),
                           label="Lancer le tirage et les calculs")
            ),
-           wellPanel("La fonction utilis\u00e9e en R est la fonction",span("strata", style="color:blue"),   "du package SAMPLING")
+           wellPanel("Vous pouvez appuyer sur les ",span("fleches directionnelles", style="color:blue"),   "(→ ou ←) du clavier pour affiner de 1 en 1 la taille de l'echantillon")
     ),
     column(4,
            
