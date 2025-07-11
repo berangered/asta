@@ -25,7 +25,7 @@ mod_stat6_classif_modele_ui <- function(id){
                                    style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                             selectInput(ns("select1"),
                                         "Choissisez un algorithme :",
-                                        choices = c("Régression Logistique","Arbre","Forêt aléatoire","KNN")),
+                                        choices = c("Régression Logistique","Arbre","Forêt aléatoire","proches voisins KNN")),
                             actionButton(ns("go1"),"Ajustement du modèle")
                           
                           ),

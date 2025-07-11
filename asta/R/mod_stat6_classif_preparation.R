@@ -34,7 +34,7 @@ mod_stat6_classif_preparation_ui <- function(id){
                            value = 80,
                            step = 5),
                
-               actionButton(ns("go1"),label = "Exploration la base d'entraînement")
+               actionButton(ns("go1"),label = "Partitionner et explorer la base d'entraînement")
                
               
                

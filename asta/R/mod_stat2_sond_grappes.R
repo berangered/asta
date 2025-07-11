@@ -37,7 +37,7 @@ mod_stat2_sond_grappes_ui <- function(id){
                    ),
                    
                    
-                   wellPanel("Vous pouvez appuyer sur les ",span("fleches directionnelles", style="color:blue"),   "(→ ou ←) du clavier pour affiner de 1 en 1 la taille de l'echantillon"
+                   wellPanel("UP = unités primaires = grappes"
             )),
             
             column(4,
