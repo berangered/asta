@@ -22,7 +22,7 @@ mod_stat2_sond_sas_ui <- function(id){
                            "Choisissez la taille de l'\u00e9chantillon",
                            min=10,
                            max=5418,
-                           value=15),
+                           value=100),
                selectInput(ns("NomVar1"),
                            "Choisissez un caract\u00e8re :", 
                            choices=c("Revenu Disponible"="REV_DISPONIBLE","Patrimoine"="PATRIMOINE")),
