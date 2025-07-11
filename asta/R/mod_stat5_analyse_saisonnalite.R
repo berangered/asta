@@ -34,7 +34,7 @@ mod_stat5_analyse_saisonnalite_ui <- function(id){
                  choices = c("Trafic a\u00e9rien"="airpass",
                              "Fr\u00e9quentation hoteliere"="hotel",
                              "Taux de chomage au sens du BIT (en %)" = "chomage_bit",
-                             "S\u00e9curit\u00e9 routiere"="accidents")
+                             "Accidents de la route (mortels ou graves)"="accidents")
                ),
                
                checkboxInput(inputId = ns("check1"),
