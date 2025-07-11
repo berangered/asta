@@ -29,7 +29,7 @@ mod_stat2_sond_sas_ui <- function(id){
                actionButton(ns("go"),
                             label="Lancer le tirage et les calculs")
              ),
-             wellPanel("La fonction utilis\u00e9e en R est la fonction",span("sample", style="color:blue"),   "pr\u00e9sente dans R de base")
+             wellPanel("Vous pouvez appuyer sur les ",span("fleches directionnelles", style="color:blue"),   "(→ ou ←) du clavier pour affiner de 1 en 1 la taille de l'echantillon")
       ),
       column(4,
              
