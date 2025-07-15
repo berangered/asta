@@ -13,3 +13,9 @@ shinyproxy:
     enabled: true
     ingressClassName: "nginx"
     hostname: asta.lab.sspcloud.fr
+
+livenessProbe:
+  enabled: true
+  periodSeconds: 20
+  initialDelaySeconds: 2
+  failureThreshold: 5
