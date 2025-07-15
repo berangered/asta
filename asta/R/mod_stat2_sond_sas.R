@@ -29,7 +29,7 @@ mod_stat2_sond_sas_ui <- function(id){
                actionButton(ns("go"),
                             label="Lancer le tirage et les calculs")
              ),
-             wellPanel("Vous pouvez appuyer sur les ",span("fleches directionnelles", style="color:blue"),   "(→ ou ←) du clavier pour affiner de 1 en 1 la taille de l'echantillon")
+             wellPanel("Vous pouvez appuyer sur les ",span("fleches directionnelles", style="color:blue"),   "(→ ou ←) du clavier pour affiner de 1 en 1 la taille de l'\u00e9chantillon")
       ),
       column(4,
              
