@@ -19,7 +19,7 @@ mod_stat4_lineaire_multiple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une variable \u00e0 expliquer",
-                                   choices = c("Vols de vehicules (pour 1000 hbts)"="Tx_vols_vehicules","Cambriolages (pour 1000 hbts)"="Tx_cambriolages")),
+                                   choices = c("Cambriolages (pour 1000 hbts)"="Tx_cambriolages","Vols de vehicules (pour 1000 hbts)"="Tx_vols_vehicules")),
                        
                        selectizeInput(ns("Varexplicative"), 
                                       "Choisissez des variables explicatives",
