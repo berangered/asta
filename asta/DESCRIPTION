@@ -6,7 +6,7 @@ Authors@R:
 Description: Appli attaches.
 License: MIT + file LICENSE
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 Imports:
     config (>= 0.3.1),
     dashboardthemes,
