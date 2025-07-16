@@ -18,6 +18,9 @@ departements_regr <- departements_regr %>% select(-Part_0015, -Part_menages_impo
                                         -Part_revenus_du_patrimoine, -Tx_procurations, -Tx_coups_blessures, -Part_salaries)
 
 departements_regr$GR_REG <- factor(departements_regr$GR_REG, levels = c("NE", "NO", "SE", "SO", "IDF", "DOM"))
-departements_regr$nb_habitants <- departements_regr$nb_habitants/1000000
+departements_regr$nb_habitants <- round(departements_regr$nb_habitants/1000000,3)
+departements_regr$Tx_emploi <- round(departements_regr$Tx_emploi,1)
+
+departements_regr <- departements_regr %>% select(-Densite_pop, -Tx_activite, -Salaire_horaire, -Part_prest, -part_maisons, -part_proprietaires )
 
 usethis::use_data(departements_regr, overwrite = TRUE)

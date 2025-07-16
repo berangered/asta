@@ -103,7 +103,7 @@ mod_stat4_ui <- function(id){
                    tags$br(), 
                    
                    tabsetPanel(type="tabs",
-                               tabPanel("gapminder",
+                               tabPanel("départements",
                                  
                                  DT::DTOutput(ns('dt1'))
                                  
@@ -128,11 +128,11 @@ mod_stat4_ui <- function(id){
                    
                    
                    tabsetPanel(type="tabs",
-                               tabPanel("gapminder",
+                               tabPanel("Départements",
                                         
                                         tags$br(),
                                         
-                                        tags$p("La base Gapminder utilisée est un extrait du dataset Gapminder, inclus dans le package du même nom. Ici la base Gapminder comprend 168 lignes correspondant à 168 pays et 10 variables décrivant la situation démographique, sociale et économique des pays.", 
+                                        tags$p("La base départements est un extrait issu de statistiques locales. Elle contient 100 départements (hors Mayotte) et 10 variables portant sur la population et ses caractéristiques socio-économiques.", 
                                                style = "font-size : 110% "),
                                         
                                         tags$br(),
@@ -146,16 +146,16 @@ mod_stat4_ui <- function(id){
                                                     tags$p("Dictionnaire des variables", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                                     
                                                     tags$br(),  
-                                                    tags$p("Country : nom du pays", style = "font-size : 110% "),
-                                                    tags$p("Year : années des données", style = "font-size : 110% "),
-                                                    tags$p("Infant_Mortality : taux de mortalité infantile en pour mille", style = "font-size : 110% "),
-                                                    tags$p("Life_expectancy : espérance de vie en années", style = "font-size : 110% "),
-                                                    tags$p("Fertility :  indicateur conjoncturel de fécondité en nombre d’enfants par femme", style = "font-size : 110% "),
-                                                    tags$p("Population : nombre d’habitants", style = "font-size : 110% "),
-                                                    tags$p("GDP : produit intérieur brut PIB en dollars", style = "font-size : 110% "),
-                                                    tags$p("Continent : nom du continent", style = "font-size : 110% "),
-                                                    tags$p("Region : nom de la région du monde", style = "font-size : 110% "),
-                                                    tags$p("Gdp_per_capita : pib par habitant en dollars ppa (parité de pouvoir d’achat).", style = "font-size : 110% ")
+                                                    tags$p("nb_habitants : nombre d'habitants du département (en millions)", style = "font-size : 110% "),
+                                                    tags$p("Part_6599 : part d'habitants âgés de 65 ans ou plus", style = "font-size : 110% "),
+                                                    tags$p("part_bacp5 : part d'habitants diplômés de niveau bac+5", style = "font-size : 110% "),
+                                                    tags$p("Tx_chomage : taux de chômage", style = "font-size : 110% "),
+                                                    tags$p("Tx_emploi : taux d'emploi", style = "font-size : 110% "),
+                                                    tags$p("Part_cadres : part de PCS cadres dans la population", style = "font-size : 110% "),
+                                                    tags$p("part_resid_secondaires : part de résidences secondaires dans les logements", style = "font-size : 110% "),
+                                                    tags$p("Tx_cambriolages : nombre de cambriolages pour 1000 habitants", style = "font-size : 110% "),
+                                                    tags$p("Tx_vols_vehicules : nombre de vols de véhicules pour 1000 habitants", style = "font-size : 110% "),
+                                                    tags$p("GR_REG : région d'appartenance, en 6 modalités (NO, NE, SO, SE, IDF, DOM)", style = "font-size : 110% ")
                                                     
                                                     
                                                     
@@ -257,7 +257,7 @@ mod_stat4_server <- function(id, global){
     ns <- session$ns
     
     global <- reactiveValues(data = grandile)
-    local <- reactiveValues(dt1 = gapminder, dt2=titanic)
+    local <- reactiveValues(dt1 = departements_regr, dt2=titanic)
     
     output$dt1 <- renderDT({
       

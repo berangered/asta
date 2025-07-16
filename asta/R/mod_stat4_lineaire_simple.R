@@ -19,11 +19,11 @@ mod_stat4_lineaire_simple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une variable \u00e0 expliquer",
-                                   choices = c("Nb de personnes ménage"="NBPERS","Nb de pièces logement"="NBPIECES","Patrimoine"="PATRIMOINE", "Revenu Disponible"="REV_DISPONIBLE")),
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        selectInput(ns("Varexplicative"), 
                                    "Choisissez la variable explicative",
-                                   choices = c("Nb de personnes ménage"="NBPERS","Nb de pièces logement"="NBPIECES","Patrimoine"="PATRIMOINE", "Revenu Disponible"="REV_DISPONIBLE")),
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        
                        
@@ -68,14 +68,15 @@ mod_stat4_lineaire_simple_server <- function(id,global){
     ns <- session$ns
     
     local <- reactiveValues(dt = NULL, var_explicative = NULL,var_expliquee = NULL )
-    
+    global <- reactiveValues(dt = departements_regr)
     
     observeEvent(input$go, {
-      local$dt <- global$data
+      #local$dt <- global$data
+      local$dt <- global$dt
       local$var_explicative <- input$Varexplicative
       local$var_expliquee <- input$Varexpliquee
       local$constante <- input$constante
-      local$model <- model_lineaireS_tab(input_data=global$data,
+      local$model <- model_lineaireS_tab(input_data=local$dt,
                                          var_expliquee = local$var_expliquee ,
                                          var_explicative = local$var_explicative, constante = local$constante)
     })
@@ -96,7 +97,7 @@ mod_stat4_lineaire_simple_server <- function(id,global){
           need(expr = !is.null(local$dt),
                message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le graphique")
         )
-     model_lineaireS_plot(input_data = global$data, var_expliquee =  local$var_expliquee, var_explicative = local$var_explicative, constante = local$constante)
+     model_lineaireS_plot(input_data = local$dt, var_expliquee =  local$var_expliquee, var_explicative = local$var_explicative, constante = local$constante)
        
         
       }
