@@ -19,11 +19,11 @@ mod_stat4_lineaire_simple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une première variable",
-                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
+                                   choices = c("Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        selectInput(ns("Varexplicative"), 
                                    "Choisissez une seconde variable",
-                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
+                                   choices = c("Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        
                        
