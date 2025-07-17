@@ -1,4 +1,4 @@
-#' stat4_lineaire_simple UI Function
+#' stat4_foot_simple UI Function
 #'
 #' @description A shiny Module.
 #'
@@ -7,7 +7,7 @@
 #' @noRd 
 #'
 #' @importFrom shiny NS tagList 
-mod_stat4_lineaire_simple_ui <- function(id){
+mod_stat4_foot_simple_ui <- function(id){
   ns <- NS(id)
   tagList(
     tabItem(tabName = "reg_lineaire",
@@ -19,11 +19,11 @@ mod_stat4_lineaire_simple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une première variable",
-                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
+                                   choices = c("Pourcentage de victoires"="pct_victoires","Nb de matchs joués"="matchs","Nb moyen de buts marqués par match"="but_marques", "Nb moyen de buts encaissés par match"="but_encaiss", "Nb habitants (en milliers)"="pop", "Nb habitants (racine carrée)"="pop_racine", "Nb habitants (logarithme)"="pop_log")),
                        
                        selectInput(ns("Varexplicative"), 
                                    "Choisissez une seconde variable",
-                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "Part bac+5"="part_bacp5", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part de PCS cadres"="Part_cadres", "Part résidences secondaires"="part_resid_secondaires")),
+                                   choices = c("Pourcentage de victoires"="pct_victoires","Nb de matchs joués"="matchs","Nb moyen de buts marqués par match"="but_marques", "Nb moyen de buts encaissés par match"="but_encaiss", "Nb habitants (en milliers)"="pop", "Nb habitants (racine carrée)"="pop_racine", "Nb habitants (logarithme)"="pop_log")),
                        
                        
                        
@@ -63,12 +63,12 @@ mod_stat4_lineaire_simple_ui <- function(id){
 #' stat4_lineaire_simple Server Functions
 #'
 #' @noRd 
-mod_stat4_lineaire_simple_server <- function(id,global){
+mod_stat4_foot_simple_server <- function(id,global){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
     
     local <- reactiveValues(dt = NULL, var_explicative = NULL,var_expliquee = NULL )
-    global <- reactiveValues(dt = departements_regr)
+    global <- reactiveValues(dt = foot)
     
     observeEvent(input$go, {
       #local$dt <- global$data
@@ -84,15 +84,15 @@ mod_stat4_lineaire_simple_server <- function(id,global){
     })
     
     output$tab1 <- renderPrint({
-      
+
       validate(need(expr = !is.null(local$dt),
                     message = "Choisissez deux variables dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
-      
+
       # browser()
       print(local$model)
-     
+
     })
-    
+
     output$regline <- renderPlot(
       {
         validate(
@@ -118,14 +118,15 @@ mod_stat4_lineaire_simple_server <- function(id,global){
       req(local$dt)
       c <- cor(local$dt[,local$var_expliquee],local$dt[,local$var_explicative])
       #format_box(a)
-      round(c,2)
+      round(as.numeric(c),2)
+      
     })
     
   })
 }
     
 ## To be copied in the UI
-# mod_stat4_lineaire_simple_ui("stat4_lineaire_simple_ui_1")
+# mod_stat4_foot_simple_ui("stat4_foot_simple_ui_1")
     
 ## To be copied in the server
-# mod_stat4_lineaire_simple_server("stat4_lineaire_simple_ui_1")
+# mod_stat4_foot_simple_server("stat4_foot_simple_ui_1")

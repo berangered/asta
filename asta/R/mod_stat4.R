@@ -38,10 +38,14 @@ mod_stat4_ui <- function(id){
                                       "R\u00e9gressions lineaires",
                                       icon = icon("th"),
                                       selected = FALSE,
-                                      menuSubItem("R\u00e9gressions lineaires Simple", 
+                                      menuSubItem("départements - corrélations", 
                                                   tabName = "reg_lineaire"),
-                                      menuSubItem("R\u00e9gressions lineaires multiples", 
-                                                  tabName = "reg_multiple")
+                                      menuSubItem("départements - régression", 
+                                                  tabName = "reg_multiple"),
+                                      menuSubItem("foot - corrélations", 
+                                                  tabName = "reg_foot"),
+                                      menuSubItem("foot - régression", 
+                                                  tabName = "foot_multiple")
                                       
                                       
                                     ), 
@@ -108,6 +112,11 @@ mod_stat4_ui <- function(id){
                                  DT::DTOutput(ns('dt1'))
                                  
                                ),
+                               tabPanel("foot",
+                                        
+                                        DT::DTOutput(ns('dt3'))
+                                        
+                               ),
                                tabPanel("titanic",
                                  
                                         DT::DTOutput(ns('dt2'))
@@ -163,6 +172,42 @@ mod_stat4_ui <- function(id){
                                                         
                                                         
                                                         ))
+                                        
+                               ),
+                               tabPanel("Foot",
+                                        
+                                        tags$br(),
+                                        
+                                        tags$p("La base Foot est constituée des 213 pays ayant participé à au moins une coupe du monde de football masculine, en qualifications ou en phases finales, entre 1990 et 2022.", 
+                                               style = "font-size : 110% "),
+                                        
+                                        tags$br(),
+                                        
+                                        fluidRow(
+                                          
+                                          column(4,
+                                                 
+                                                 wellPanel(
+                                                   
+                                                   tags$p("Dictionnaire des variables", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
+                                                   
+                                                   tags$br(),  
+                                                   tags$p("pays : nom du pays", style = "font-size : 110% "),
+                                                   tags$p("matchs : nombre de matchs joués (qualifications ou phases finales)", style = "font-size : 110% "),
+                                                   tags$p("pct_victoires : pourcentage de matchs gagnés", style = "font-size : 110% "),
+                                                   tags$p("but_marques : nombre moyen de buts marqués par match", style = "font-size : 110% "),
+                                                   tags$p("but_encaiss : nombre moyen de buts encaissés par match", style = "font-size : 110% "),
+                                                   tags$p("continent : continent auquel appartient le pays (en 4 modalités)", style = "font-size : 110% "),
+                                                   tags$p("pop : nombre d'habitants du pays en 2022 (en milliers)", style = "font-size : 110% "),
+                                                   tags$p("pop_racine : racine carré de la variable pop", style = "font-size : 110% "),
+                                                   tags$p("pop_log : logarithme de la variable pop", style = "font-size : 110% ")
+                                                   
+                                                   
+                                                   
+                                                 )      
+                                                 
+                                                 
+                                          ))
                                         
                                ),
                                tabPanel("titanic",
@@ -235,6 +280,14 @@ mod_stat4_ui <- function(id){
                    mod_stat4_lineaire_multiple_ui(ns("stat4_lineaire_multiple_ui_1")), 
                  ),
                  tabItem(
+                   tabName = "reg_foot",
+                   mod_stat4_foot_simple_ui(ns("stat4_foot_simple_ui_1")), 
+                 ),
+                 tabItem(
+                   tabName = "foot_multiple",
+                   mod_stat4_foot_multiple_ui(ns("stat4_foot_multiple_ui_1")), 
+                 ),
+                 tabItem(
                    tabName = "reg_nl",
                    mod_stat4_non_lineaire_ui(ns("stat4_non_lineaire_ui_1")), 
                  ),
@@ -257,7 +310,7 @@ mod_stat4_server <- function(id, global){
     ns <- session$ns
     
     global <- reactiveValues(data = grandile)
-    local <- reactiveValues(dt1 = departements_regr, dt2=titanic)
+    local <- reactiveValues(dt1 = departements_regr, dt2=titanic, dt3=foot)
     
     output$dt1 <- renderDT({
       
@@ -270,9 +323,17 @@ mod_stat4_server <- function(id, global){
       local$dt2 %>% DT::datatable(class = "display")
       
     })
+    
+    output$dt3 <- renderDT({
+      
+      local$dt3 %>% DT::datatable(class = "display")
+      
+    })
  
     mod_stat4_lineaire_simple_server("stat4_lineaire_simple_ui_1", global=global)
     mod_stat4_lineaire_multiple_server("stat4_lineaire_multiple_ui_1",global=global)
+    mod_stat4_foot_simple_server("stat4_foot_simple_ui_1", global=global)
+    mod_stat4_foot_multiple_server("stat4_foot_multiple_ui_1",global=global)
     mod_stat4_non_lineaire_server("stat4_non_lineaire_ui_1", global=global)
     mod_stat4_logistique_server("stat4_logistique_ui_1", global=global)
   })
