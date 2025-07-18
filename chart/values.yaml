@@ -3,7 +3,7 @@ shinyproxy:
     - id: "asta"
       display-name: "ASTA"
       description: ""
-      container-image: "berangered/asta:v1.8"
+      container-image: "berangered/asta:v1.9"
       container-memory-limit: 4000Mi
       container-cpu-limit: 1000m
       container-memory-request: 2000Mi
@@ -12,7 +12,7 @@ shinyproxy:
   ingress:
     enabled: true
     ingressClassName: "nginx"
-    hostname: asta.lab.sspcloud.fr
+    hostname: asta2.lab.sspcloud.fr
 
   livenessProbe:
     enabled: true
