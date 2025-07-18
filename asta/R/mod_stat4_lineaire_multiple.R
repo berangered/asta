@@ -19,11 +19,11 @@ mod_stat4_lineaire_multiple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une variable \u00e0 expliquer",
-                                   choices = c("Vols de vehicules (pour 1000 hbts)"="Tx_vols_vehicules")),
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Vols de vehicules (pour 1000 hbts)"="Tx_vols_vehicules")),
                        
                        selectizeInput(ns("Varexplicative"), 
                                       "Choisissez des variables explicatives",
-                                      choices = c("Nb habitants (millions)"="nb_habitants","Part 65 ans ou +"="Part_6599","Taux de chomage"="Tx_chomage","Taux d'emploi"="Tx_emploi","Part de bac+5"="part_bacp5","Part resid. secondaires"="part_resid_secondaires","Region"="GR_REG"),
+                                      choices = c("Nb habitants (millions)"="nb_habitants","Part 65 ans ou +"="Part_6599","Taux de chomage"="Tx_chomage","Taux d'emploi"="Tx_emploi","Part resid. secondaires"="part_resid_secondaires","Region"="GR_REG"),
                                       multiple = TRUE  ),
                        
                        #checkboxInput(inputId=ns("constante"), "Retirer la constante", value = FALSE, width = NULL),

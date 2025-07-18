@@ -1,17 +1,17 @@
 * using log directory ‘/home/onyxia/work/asta/asta.Rcheck’
-* using R version 4.3.3 (2024-02-29)
-* using platform: x86_64-pc-linux-gnu (64-bit)
+* using R version 4.5.0 (2025-04-11)
+* using platform: x86_64-pc-linux-gnu
 * R was compiled by
     gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
     GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
-* running under: Ubuntu 22.04.4 LTS
+* running under: Ubuntu 22.04.5 LTS
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘asta/DESCRIPTION’ ... OK
 * this is package ‘asta’ version ‘1.1’
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ... NOTE
+* checking package dependencies ... INFO
 Imports includes 32 non-default packages.
 Importing from so many packages makes the package vulnerable to any of
 them becoming unavailable.  Move as many as possible to Suggests and
@@ -22,18 +22,18 @@ use conditionally.
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking serialization versions ... OK
-* checking whether package ‘asta’ can be installed ... [42s/19s] WARNING
+* checking whether package ‘asta’ can be installed ... [31s/15s] WARNING
 Found the following significant warnings:
   Warning: replacing previous import ‘dplyr::filter’ by ‘stats::filter’ when loading ‘asta’
 See ‘/home/onyxia/work/asta/asta.Rcheck/00install.out’ for details.
-* checking installed package size ... NOTE
-  installed size is  9.7Mb
+* checking installed package size ... INFO
+  installed size is  9.8Mb
   sub-directories of 1Mb or more:
     app   2.6Mb
     doc   6.4Mb
 * checking package directory ... OK
-* checking for future file timestamps ... OK
+* checking for future file timestamps ... NOTE
+unable to verify current time
 * checking ‘build’ directory ... OK
 * checking DESCRIPTION meta-information ... WARNING
 Invalid license file pointers: LICENSE
@@ -41,36 +41,44 @@ Invalid license file pointers: LICENSE
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
-* checking R files for non-ASCII characters ... WARNING
+* checking code files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
-  fct_graphggplotly_diagbarre.R
-  mod_stat1_inf_tests.R
-  mod_stat1.R
-  mod_stat2_redress_corrna.R
-  mod_stat2_redress_impact.R
-  mod_stat3_acp.R
-  mod_stat3_cah.R
-  mod_stat3.R
-  mod_stat4_lineaire_multiple.R
-  mod_stat4_lineaire_simple.R
-  mod_stat4_logistique.R
-  mod_stat4.R
-  mod_stat5_desaisonnalisation_mm.R
-  mod_stat5_desaisonnalisation_regression.R
-  mod_stat6_classif_donnees.R
-  mod_stat6_classif_generalisation.R
-  mod_stat6_classif_modele.R
-  mod_stat6_classif_preparation.R
-  mod_stat6_classif_validation.R
-  mod_stat6_reg_donnees.R
-  mod_stat6_reg_generalisation.R
-  mod_stat6_reg_modele.R
-  mod_stat6_reg_preparation.R
-  mod_stat6_reg_validation.R
-  mod_stat6.R
-Portable packages must use only ASCII characters in their R code,
-except perhaps in comments.
+  R/fct_graphggplotly_diagbarre.R
+  R/mod_stat1_inf_tests.R
+  R/mod_stat1.R
+  R/mod_stat2_redress_corrna.R
+  R/mod_stat2_redress_impact.R
+  R/mod_stat2_sond_2deg.R
+  R/mod_stat2_sond_grappes.R
+  R/mod_stat2_sond_saf.R
+  R/mod_stat2_sond_sas.R
+  R/mod_stat3_acp.R
+  R/mod_stat3_cah.R
+  R/mod_stat3.R
+  R/mod_stat4_foot_multiple.R
+  R/mod_stat4_foot_simple.R
+  R/mod_stat4_lineaire_multiple.R
+  R/mod_stat4_lineaire_simple.R
+  R/mod_stat4_logistique.R
+  R/mod_stat4.R
+  R/mod_stat5_desaisonnalisation_mm.R
+  R/mod_stat5_desaisonnalisation_regression.R
+  R/mod_stat6_classif_donnees.R
+  R/mod_stat6_classif_generalisation.R
+  R/mod_stat6_classif_modele.R
+  R/mod_stat6_classif_preparation.R
+  R/mod_stat6_classif_validation.R
+  R/mod_stat6_reg_donnees.R
+  R/mod_stat6_reg_generalisation.R
+  R/mod_stat6_reg_modele.R
+  R/mod_stat6_reg_preparation.R
+  R/mod_stat6_reg_validation.R
+  R/mod_stat6.R
+Portable packages must use only ASCII characters in their R code and
+NAMESPACE directives, except perhaps in comments.
 Use \uxxxx escapes for other characters.
+Function ‘tools::showNonASCIIfile’ can help in finding non-ASCII
+characters in files.
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK
 * checking whether the package can be loaded with stated dependencies ... OK
@@ -82,7 +90,13 @@ Use \uxxxx escapes for other characters.
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
-* checking R code for possible problems ... [82s/22s] OK
+* checking R code for possible problems ... [60s/22s] NOTE
+model_lineaireM_resid: no visible global function definition for ‘hist’
+Undefined global functions or variables:
+  hist
+Consider adding
+  importFrom("graphics", "hist")
+to your NAMESPACE file.
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -93,44 +107,18 @@ Use \uxxxx escapes for other characters.
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking contents of ‘data’ directory ... OK
-* checking data for non-ASCII characters ... WARNING
-  Warning: found non-ASCII strings
-  'Ard<c3><a8>che' in object 'departements'
-  'Ari<c3><a8>ge' in object 'departements'
-  'Bouches-du-Rh<c3><b4>ne' in object 'departements'
-  'Corr<c3><a8>ze' in object 'departements'
-  'C<c3><b4>te-d'Or' in object 'departements'
-  'C<c3><b4>tes-d'Armor' in object 'departements'
-  'Dr<c3><b4>me' in object 'departements'
-  'Finist<c3><a8>re' in object 'departements'
-  'H<c3><a9>rault' in object 'departements'
-  'Is<c3><a8>re' in object 'departements'
-  'Loz<c3><a8>re' in object 'departements'
-  'Ni<c3><a8>vre' in object 'departements'
-  'Puy-de-D<c3><b4>me' in object 'departements'
-  'Pyr<c3><a9>n<c3><a9>es-Atlantiques' in object 'departements'
-  'Hautes-Pyr<c3><a9>n<c3><a9>es' in object 'departements'
-  'Pyr<c3><a9>n<c3><a9>es-Orientales' in object 'departements'
-  'Rh<c3><b4>ne' in object 'departements'
-  'Haute-Sa<c3><b4>ne' in object 'departements'
-  'Sa<c3><b4>ne-et-Loire' in object 'departements'
-  'Deux-S<c3><a8>vres' in object 'departements'
-  'Vend<c3><a9>e' in object 'departements'
-  'La R<c3><a9>union' in object 'departements'
+* checking data for non-ASCII characters ... OK
 * checking LazyData ... OK
 * checking data for ASCII and uncompressed saves ... OK
  WARNING
 ‘qpdf’ is needed for checks on size reduction of PDFs
 * checking installed files from ‘inst/doc’ ... OK
 * checking files in ‘vignettes’ ... OK
-* checking examples ... [36s/18s] OK
-Examples with CPU (user + system) or elapsed time > 5s
-                           user system elapsed
-graphggplotly_qualiquanti 2.566  5.412   0.554
+* checking examples ... [28s/17s] OK
 * checking for unstated dependencies in vignettes ... OK
-* checking package vignettes in ‘inst/doc’ ... OK
-* checking re-building of vignette outputs ... [174s/49s] OK
+* checking package vignettes ... OK
+* checking re-building of vignette outputs ... [101s/43s] OK
 * checking for non-standard things in the check directory ... OK
 * checking for detritus in the temp directory ... OK
 * DONE
-Status: 5 WARNINGs, 2 NOTEs
+Status: 4 WARNINGs, 2 NOTEs

@@ -5,7 +5,7 @@ Authors@R:
     person("Jean", "Sebban", , "jean.sebban@insee.fr", role = c("cre", "aut"))
 Description: Appli attaches.
 License: MIT + file LICENSE
-Depends: R (>= 2.10)
+Depends: R (>= 3.5)
 Imports: config (>= 0.3.1), dashboardthemes, data.table, dplyr, DT,
         dygraphs, factoextra, FactoMineR, GGally, ggplot2, ggthemes,
         golem (>= 0.3.1), kknn, LiblineaR, parsnip, plotly, purrr,
@@ -17,9 +17,9 @@ Suggests: datasets, kableExtra, knitr, lubridate, ranger, rmarkdown,
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2024-06-07 12:39:19 UTC; onyxia
+Packaged: 2025-07-18 09:26:37 UTC; onyxia
 Author: Jean Sebban [cre, aut]
 Maintainer: Jean Sebban <jean.sebban@insee.fr>
-Built: R 4.3.3; ; 2024-06-07 12:39:29 UTC; unix
+Built: R 4.5.0; ; 2025-07-18 09:26:44 UTC; unix

@@ -314,6 +314,25 @@ histoplotly_simul(a,"AGE")
 base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 base::cat("histoplotly_simul", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
+nameEx("model_lineaireM_resid")
+### * model_lineaireM_resid
+
+flush(stderr()); flush(stdout())
+
+base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+### Name: model_lineaireM_resid
+### Title: model_lineaireM_resid
+### Aliases: model_lineaireM_resid
+
+### ** Examples
+
+model_lineaireM_resid(iris, "Petal.Length", c("Sepal.Length", "Petal.Width", "Sepal.Width"))
+
+
+
+base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+base::cat("model_lineaireM_resid", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+cleanEx()
 nameEx("model_lineaireM_tab")
 ### * model_lineaireM_tab
 

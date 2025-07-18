@@ -155,15 +155,15 @@ mod_stat4_ui <- function(id){
                                                     tags$p("Dictionnaire des variables", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                                                     
                                                     tags$br(),  
+                                                    tags$p("Tx_cambriolages : nombre de cambriolages pour 1000 habitants", style = "font-size : 110% "),
+                                                    tags$p("Tx_vols_vehicules : nombre de vols de véhicules pour 1000 habitants", style = "font-size : 110% "),
                                                     tags$p("nb_habitants : nombre d'habitants du département (en millions)", style = "font-size : 110% "),
                                                     tags$p("Part_6599 : part d'habitants âgés de 65 ans ou plus", style = "font-size : 110% "),
-                                                    tags$p("part_bacp5 : part d'habitants diplômés de niveau bac+5", style = "font-size : 110% "),
+                                                    #tags$p("part_bacp5 : part d'habitants diplômés de niveau bac+5", style = "font-size : 110% "),
                                                     tags$p("Tx_chomage : taux de chômage", style = "font-size : 110% "),
                                                     tags$p("Tx_emploi : taux d'emploi", style = "font-size : 110% "),
                                                     #tags$p("Part_cadres : part de PCS cadres dans la population", style = "font-size : 110% "),
                                                     tags$p("part_resid_secondaires : part de résidences secondaires dans les logements", style = "font-size : 110% "),
-                                                    #tags$p("Tx_cambriolages : nombre de cambriolages pour 1000 habitants", style = "font-size : 110% "),
-                                                    tags$p("Tx_vols_vehicules : nombre de vols de véhicules pour 1000 habitants", style = "font-size : 110% "),
                                                     tags$p("GR_REG : région d'appartenance, en 6 modalités (NO, NE, SO, SE, IDF, DOM)", style = "font-size : 110% ")
                                                     
                                                     

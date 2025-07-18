@@ -37,7 +37,7 @@ mod_stat2_sond_grappes_ui <- function(id){
                    ),
                    
                    
-                   wellPanel("La fonction utilis\u00e9e en R est la fonction",span("sample", style="color:blue"),   "de R base pour la s\u00e9lection des unit\u00e9s primaires"
+                   wellPanel("UP = unités primaires = grappes"
             )),
             
             column(4,

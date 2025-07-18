@@ -11,31 +11,31 @@ mod_stat4_lineaire_simple_ui <- function(id){
   ns <- NS(id)
   tagList(
     tabItem(tabName = "reg_lineaire",
-            h2("R\u00e9gression lin\u00e9aire simple"),
+            h2("Calcul coefficient de corrélation linéaire"),
             fluidRow(tags$style("background-color : #E3F2FD;"),
               column(4,
                      
                      wellPanel(
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
-                                   "Choisissez une variable \u00e0 expliquer",
-                                   choices = c("Nb de personnes ménage"="NBPERS","Nb de pièces logement"="NBPIECES","Patrimoine"="PATRIMOINE", "Revenu Disponible"="REV_DISPONIBLE")),
+                                   "Choisissez une première variable",
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        selectInput(ns("Varexplicative"), 
-                                   "Choisissez la variable explicative",
-                                   choices = c("Nb de personnes ménage"="NBPERS","Nb de pièces logement"="NBPIECES","Patrimoine"="PATRIMOINE", "Revenu Disponible"="REV_DISPONIBLE")),
+                                   "Choisissez une seconde variable",
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Nb de vols de véhicules (pour 1000 hbts)"="Tx_vols_vehicules","Nb d'habitants"="nb_habitants", "Part 65 ans ou +"="Part_6599", "taux de chômage"="Tx_chomage", "taux d'emploi"="Tx_emploi", "Part résidences secondaires"="part_resid_secondaires")),
                        
                        
                        
-                       checkboxInput(inputId=ns("constante"), "Retirer la constante", value = FALSE, width = NULL),
+                       #checkboxInput(inputId=ns("constante"), "Retirer la constante", value = FALSE, width = NULL),
                        
-                       actionButton(inputId=ns("go"),"Mettre \u00e0 jour")),
+                       actionButton(inputId=ns("go"),"Calculer")),
                      
                      wellPanel(
-                       tags$p("Coeff de détermination R2", style = "font-size : 110%; font-weight : bold; text-decoration : underline;")
+                       tags$p("Coeff de corrélation linéaire", style = "font-size : 110%; font-weight : bold; text-decoration : underline;")
                        ,
                        verbatimTextOutput(ns("coeffcorr")),br(),
-                       "Compris entre 0 et 1, le coefficient de détermination ou R2 donne le % de variance expliqué par le modèle.",br(),
+                       "Coefficient de corrélation linéaire entre les 2 variables quanti. Attention, ce n'est pas la même chose que le R2.",br(),
                        br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;"))
               ),
@@ -48,10 +48,10 @@ mod_stat4_lineaire_simple_ui <- function(id){
                        plotOutput(ns("regline")),br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")
                        
-                     ),wellPanel(
-                       tags$p("Résultat du modèle - sortie R", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
-                       verbatimTextOutput(ns("tab1")),br(),
-                       tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;"))
+                     )#,wellPanel(
+                      # tags$p("Résultat du modèle - sortie R", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
+                      # verbatimTextOutput(ns("tab1")),br(),
+                      # tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;"))
                      
                      
               )
@@ -68,14 +68,17 @@ mod_stat4_lineaire_simple_server <- function(id,global){
     ns <- session$ns
     
     local <- reactiveValues(dt = NULL, var_explicative = NULL,var_expliquee = NULL )
-    
+    global <- reactiveValues(dt = departements_regr)
     
     observeEvent(input$go, {
-      local$dt <- global$data
+      #local$dt <- global$data
+      local$dt <- global$dt
       local$var_explicative <- input$Varexplicative
       local$var_expliquee <- input$Varexpliquee
-      local$constante <- input$constante
-      local$model <- model_lineaireS_tab(input_data=global$data,
+      #local$constante <- input$constante
+      local$constante <- FALSE
+      
+      local$model <- model_lineaireS_tab(input_data=local$dt,
                                          var_expliquee = local$var_expliquee ,
                                          var_explicative = local$var_explicative, constante = local$constante)
     })
@@ -83,7 +86,7 @@ mod_stat4_lineaire_simple_server <- function(id,global){
     output$tab1 <- renderPrint({
       
       validate(need(expr = !is.null(local$dt),
-                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+                    message = "Choisissez deux variables dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
       
       # browser()
       print(local$model)
@@ -94,9 +97,9 @@ mod_stat4_lineaire_simple_server <- function(id,global){
       {
         validate(
           need(expr = !is.null(local$dt),
-               message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le graphique")
+               message = "Choisissez deux variables dans le menu d\u00e9roulant et cliquez pour afficher le graphique")
         )
-     model_lineaireS_plot(input_data = global$data, var_expliquee =  local$var_expliquee, var_explicative = local$var_explicative, constante = local$constante)
+     model_lineaireS_plot(input_data = local$dt, var_expliquee =  local$var_expliquee, var_explicative = local$var_explicative, constante = local$constante)
        
         
       }
@@ -106,12 +109,16 @@ mod_stat4_lineaire_simple_server <- function(id,global){
     output$coeffcorr <- renderPrint({
       
       validate(need(expr = !is.null(local$dt),
-                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+                    message = "Choisissez deux variables dans le menu d\u00e9roulant et cliquez pour afficher le résultat"))
       
        # browser()
-   
-      c <- round(as.numeric(local$model[8]),2)
-      c
+      
+      #c <- round(as.numeric(local$model[8]),2)
+      
+      req(local$dt)
+      c <- cor(local$dt[,local$var_expliquee],local$dt[,local$var_explicative])
+      #format_box(a)
+      round(c,2)
     })
     
   })

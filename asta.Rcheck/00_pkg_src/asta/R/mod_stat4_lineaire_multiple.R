@@ -19,22 +19,23 @@ mod_stat4_lineaire_multiple_ui <- function(id){
                        tags$p("Param\u00e8tres", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        selectInput(ns("Varexpliquee"), 
                                    "Choisissez une variable \u00e0 expliquer",
-                                   choices = c("PIB par hab."="gdp_per_capita","PIB"="gdp","Mortalité inf."="infant_mortality","Espérance de vie"="life_expectancy","Fécondité"="fertility","Population"="population")),
+                                   choices = c("Nb de cambriolages (pour 1000 hbts)"="Tx_cambriolages","Vols de vehicules (pour 1000 hbts)"="Tx_vols_vehicules")),
                        
                        selectizeInput(ns("Varexplicative"), 
                                       "Choisissez des variables explicatives",
-                                      choices = c("Mortalité inf."="infant_mortality","Espérance de vie"="life_expectancy","Fécondité"="fertility","Population"="population","PIB par hab."="gdp_per_capita","PIB"="gdp"),
+                                      choices = c("Nb habitants (millions)"="nb_habitants","Part 65 ans ou +"="Part_6599","Taux de chomage"="Tx_chomage","Taux d'emploi"="Tx_emploi","Part resid. secondaires"="part_resid_secondaires","Region"="GR_REG"),
                                       multiple = TRUE  ),
                        
-                       checkboxInput(inputId=ns("constante"), "Retirer la constante", value = FALSE, width = NULL),
+                       #checkboxInput(inputId=ns("constante"), "Retirer la constante", value = FALSE, width = NULL),
                        actionButton(inputId=ns("go"),"Mettre \u00e0 jour")),
                      
                      
                      wellPanel(
-                       tags$p("Coeff de détermination R2", style = "font-size : 110%; font-weight : bold; text-decoration : underline;")
+                       tags$p("Distribution des r\u00e9sidus", style = "font-size : 110%; font-weight : bold; text-decoration : underline;")
                        ,
-                       verbatimTextOutput(ns("coeffcorr")),br(),
-                       "Compris entre 0 et 1, le coefficient de détermination ou R2 donne le % de variance expliqué par le modèle.",br(),
+                       #verbatimTextOutput(ns("coeffcorr")),br(),
+                       plotOutput(ns("residus")),br(),
+                       "Pour vérifier la normalité des résidus.",br(),
                        br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")) 
               ),
@@ -60,11 +61,11 @@ mod_stat4_lineaire_multiple_server <- function(id,global){
     ns <- session$ns
     
     local <- reactiveValues(dt = NULL,var_expliquee = NULL )
-    global <- reactiveValues(dt = gapminder)
+    global <- reactiveValues(dt = departements_regr)
     
     observeEvent(input$go, {
       local$dt <- global$dt
-      local$constante <- input$constante
+      local$constante <- FALSE #input$constante
       local$explicative <- input$Varexplicative
       
      # local$constante <- input$constante
@@ -97,10 +98,27 @@ mod_stat4_lineaire_multiple_server <- function(id,global){
                                    constante = local$constante     )
       
       
-      c <- round(as.numeric(model[8]),2)
+      c <- round(as.numeric(model[9]),2)
       c
     })
 
+    
+    output$residus <- renderPlot({
+      
+      validate(need(expr = !is.null(local$explicative),
+                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+      
+      # browser()
+      
+      resid <- model_lineaireM_resid(input_data = local$dt,
+                                   var_expliquee = input$Varexpliquee,
+                                   var_explicatives = local$explicative,
+                                   constante = local$constante     )
+      
+      
+      
+      resid
+    })
     
   })
 }

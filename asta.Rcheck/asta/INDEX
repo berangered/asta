@@ -8,8 +8,10 @@ cvs_reg_desais          cvs_reg_desais
 cvs_reg_model           cvs_reg_model
 data_apur_m2            data_apur_m2
 departements            departements
+departements_regr       departements_regr
 dygraph_reg_cvs         dygraph_reg_cvs
 dygraph_ts              dygraph_ts
+foot                    foot
 format_box              format_box
 gapminder               gapminder
 grandile                grandile
@@ -24,6 +26,7 @@ graphggplotly_qualiquanti
                         graphggplotly_qualiquanti
 histoplotly_simul       histoplotly_simul
 hotel                   hotel
+model_lineaireM_resid   model_lineaireM_resid
 model_lineaireM_tab     model_lineaireM_tab
 model_lineaireS_plot    model_lineaireS_plot
 model_lineaireS_tab     model_lineaireS_tab
