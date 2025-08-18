@@ -12,7 +12,7 @@ shinyproxy:
   ingress:
     enabled: true
     ingressClassName: "nginx"
-    hostname: asta2.lab.sspcloud.fr
+    hostname: asta.lab.sspcloud.fr
 
   livenessProbe:
     enabled: true
