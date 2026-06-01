@@ -8,7 +8,7 @@
 #'
 #' @importFrom shiny NS tagList
 #' @importFrom GGally  ggcoef
-#' @importFrom questionr  odds.ratio
+
 mod_stat4_logistique_ui <- function(id){
   ns <- NS(id)
   tagList(
@@ -112,19 +112,19 @@ mod_stat4_logistique_server <- function(id,global){
       
     })
     
-    output$plot1 <- renderPlot({
-      
-      validate(need(expr = !is.null(local$var_explicative),
-                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
-   
-      local$modelSS <- model_logistique_tab(input_data=global$dt,
-                                              var_expliquee = local$var_expliquee ,
-                                              var_explicatives = local$var_explicative)
-     
+   #  output$plot1 <- renderPlot({
+   #    
+   #    validate(need(expr = !is.null(local$var_explicative),
+   #                  message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+   # 
+   #    local$modelSS <- model_logistique_tab(input_data=global$dt,
+   #                                            var_expliquee = local$var_expliquee ,
+   #                                            var_explicatives = local$var_explicative)
    #   
-   # browser()
-       GGally::ggcoef_model(local$modelSS, exponentiate = TRUE)
-    })
+   # #   
+   # # browser()
+   #     GGally::ggcoef_model(local$modelSS, exponentiate = TRUE)
+   #  })
     
   })
 }
