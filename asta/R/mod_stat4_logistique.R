@@ -52,8 +52,8 @@ Ce critère propose un compromis entre qualité d'ajustement (fonction de maximu
                        verbatimTextOutput(ns("tab1")),br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
                      wellPanel(
-                       tags$p("Graphique des coefficients du modele", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
-                       plotOutput(ns("plot1")),br(),
+                       tags$p("Odds-Ratios", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
+                       verbatimTextOutput(ns("tab2")),br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
                      
                      
@@ -96,6 +96,18 @@ mod_stat4_logistique_server <- function(id,global){
                                           var_explicatives = local$var_explicative)
        # browser()
       print(summary(local$model))
+      
+    })
+
+    output$tab2 <- renderPrint({
+      
+      validate(need(expr = !is.null(local$var_explicative),
+                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+      local$model <- model_logistique_tab(input_data=global$dt,
+                                          var_expliquee = local$var_expliquee ,
+                                          var_explicatives = local$var_explicative)
+       # browser()
+      print(questionr::odds.ratio(local$model))
       
     })
     
