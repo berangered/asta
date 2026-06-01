@@ -104,11 +104,11 @@ mod_stat4_logistique_server <- function(id,global){
 
       validate(need(expr = !is.null(local$var_explicative),
                     message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
-      local$model <- model_logistique_tab(input_data=global$dt,
+      local$model2 <- model_logistique_tab(input_data=global$dt,
                                           var_expliquee = local$var_expliquee ,
                                           var_explicatives = local$var_explicative)
        # browser()
-      print(summary(local$model)$coeff)
+      print(summary(local$model2)$coeff)
 
     })
     
