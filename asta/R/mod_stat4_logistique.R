@@ -108,7 +108,7 @@ mod_stat4_logistique_server <- function(id,global){
                                           var_expliquee = local$var_expliquee ,
                                           var_explicatives = local$var_explicative)
        # browser()
-      print(questionr::odds.ratio(local$model))
+      print(summary(local$model))
       
     })
     
