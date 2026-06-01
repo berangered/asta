@@ -54,7 +54,7 @@ Ce critère propose un compromis entre qualité d'ajustement (fonction de maximu
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
                      wellPanel(
                        tags$p("Odds-Ratios", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
-                       verbatimTextOutput(ns("tab1")),br(),
+                       verbatimTextOutput(ns("tab2")),br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
                      
                      
