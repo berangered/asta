@@ -2,7 +2,7 @@
 
 ## Description
 
-A compléter
+Penser à l'arborescence, parfois j'ai du changer asta/chart par chart directement car on est déjà dans le répertoire asta/
 
 ## Usage
 
