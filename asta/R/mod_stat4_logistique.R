@@ -8,6 +8,7 @@
 #'
 #' @importFrom shiny NS tagList
 #' @importFrom GGally  ggcoef
+#' @importFrom questionr  odds.ratio
 mod_stat4_logistique_ui <- function(id){
   ns <- NS(id)
   tagList(
@@ -40,8 +41,8 @@ Ce critère propose un compromis entre qualité d'ajustement (fonction de maximu
                      wellPanel(span("Coefficients du modèle  :", style="color:blue"), 
                                "Les coefficients du modèle (estimate) mesurent l'effet des variables explicatives sur le modèle.
                                On peut ainsi isoler l'effet de chaque modalité sur la variable expliquée. On peut ainsi produire des analyses de type 'toutes choses égales par ailleurs'..."),
-                     wellPanel(span("Exemple d'interprétation - modèle avec les variables explicatives 'Sexe','Age','Classe' :", style="color:blue"), 
-                               "Lors du naufrage du Titanic en 1912,les femmes avaient onze fois plus de chance de survivre que les hommes (à âge et classe de voyage identiques)..."),
+                     wellPanel(span("Les Odds-Ratios :", style="color:blue"), 
+                               "Assimilés au risque relatif, ils correspondent à l'exponentielle des coefficients. Ils indiquent par combien le risque d'avoir Y=1 est multiplié lorsqu'on a cette modalité de X"),
                                
                                
               ),
