@@ -8,6 +8,7 @@
 #'
 #' @importFrom shiny NS tagList
 #' @importFrom GGally  ggcoef
+#' @importFrom questionr  odds.ratio
 
 mod_stat4_logistique_ui <- function(id){
   ns <- NS(id)
@@ -108,7 +109,8 @@ mod_stat4_logistique_server <- function(id,global){
                                           var_expliquee = local$var_expliquee ,
                                           var_explicatives = local$var_explicative)
        # browser()
-      print(summary(local$model2)$coeff)
+      print(questionr::odds.ratio(local$model2))
+      #print(summary(local$model2)$coeff)
 
     })
     
