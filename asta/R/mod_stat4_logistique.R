@@ -9,6 +9,7 @@
 #' @importFrom shiny NS tagList
 #' @importFrom GGally  ggcoef
 #' @importFrom questionr  odds.ratio
+#' @importFrom tidyr  uncount
 
 mod_stat4_logistique_ui <- function(id){
   ns <- NS(id)
@@ -33,17 +34,14 @@ mod_stat4_logistique_ui <- function(id){
                        
                        actionButton(inputId=ns("go"),"Mettre \u00e0 jour")),
                      
-                     wellPanel(span("Le critère AIC  :", style="color:blue"), 
-                               "Le meilleur modèle est celui possédant l’AIC le plus
-faible. Le critère d'information d'Akaike est une mesure de la qualité d'un modèle statistique.
-Ce critère propose un compromis entre qualité d'ajustement (fonction de maximum de vraissemblance)
-                               et complexité du modèle (nombre de paramètres à estimer"),
+                     wellPanel(span("Coefficients du modèle :", style="color:blue"), 
+                               "Les coefficients du modèle (Estimate) mesurent l'effet des variables explicatives sur le modèle.
+                               On peut ainsi isoler l'effet de chaque modalité sur la variable expliquée. On peut ainsi produire des analyses toutes choses égales par ailleurs."),
                      
-                     wellPanel(span("Coefficients du modèle  :", style="color:blue"), 
-                               "Les coefficients du modèle (estimate) mesurent l'effet des variables explicatives sur le modèle.
-                               On peut ainsi isoler l'effet de chaque modalité sur la variable expliquée. On peut ainsi produire des analyses de type 'toutes choses égales par ailleurs'..."),
                      wellPanel(span("Les Odds-Ratios :", style="color:blue"), 
-                               "Assimilés au risque relatif, ils correspondent à l'exponentielle des coefficients. Ils indiquent par combien la proba de survie est multiplié lorsqu'on a cette modalité de X"),
+                               "Assimilés au risque relatif, ils correspondent à l'exponentielle des coefficients. Ils indiquent par combien la probabilité de survie est multipliée selon la modalité prise en variable explicative."),
+                     wellPanel(span("La matrice de confusion :", style="color:blue"), 
+                               "Elle permet de mesurer la qualité du modèle. Elle croise, en ligne, la survie au naufrage du titanic (no/yes), avec, en colonne, la prédiction de survie à partir du modèle (0-non/1-oui)."),
                                
                                
               ),
@@ -56,6 +54,10 @@ Ce critère propose un compromis entre qualité d'ajustement (fonction de maximu
                      wellPanel(
                        tags$p("Odds-Ratios", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
                        verbatimTextOutput(ns("tab2")),br(),
+                       tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
+                     wellPanel(
+                       tags$p("Matrice de confusion", style = "font-size : 110%; font-weight : bold; text-decoration : underline;"),
+                       verbatimTextOutput(ns("tab3")),br(),
                        tags$p("Source : CEFIL 2021", style = "font-size : 90%; font-style : italic; text-align : right;")),
                      
                      
@@ -86,6 +88,8 @@ mod_stat4_logistique_server <- function(id,global){
       local$model <- model_logistique_tab(input_data=global$dt,
                                           var_expliquee = local$var_expliquee ,
                                           var_explicatives = local$var_explicative)
+      
+      
      })
     
     output$tab1 <- renderPrint({
@@ -103,6 +107,25 @@ mod_stat4_logistique_server <- function(id,global){
 
       print(questionr::odds.ratio(local$model))
       })
+    
+    output$tab3 <- renderPrint({
+      
+      validate(need(expr = !is.null(local$var_explicative),
+                    message = "Choisissez une variable dans le menu d\u00e9roulant et cliquez pour afficher le tableau"))
+      
+      #on passe aussi la table titanic en données individuelles pour calculer les probas et les valeurs prédites, pour la matrice de confusion
+      titanic_indiv <- tidyr::uncount(local$dt, weights = Freq)
+      a <- paste0(local$var_expliquee, " ~", paste0(local$var_explicative, collapse = "+"))
+      logit <- glm(data = titanic_indiv, as.formula(a), family = binomial(link = "logit"))
+      titanic_indiv$prob <- logit$fitted.values
+      titanic_indiv  <- titanic_indiv %>% mutate(pred = case_when(
+        prob >=0.5 ~ "1-oui",
+        T ~ "0-non"
+      ))
+      local$confusion <- table(titanic_indiv$Survived,titanic_indiv$pred)
+      
+      print(local$confusion)
+    })
     
    #  output$plot1 <- renderPlot({
    #    
